@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "craft-payne",
+  "version": "${version}",
+
+  "name": "Craft-Payne",
+  "description": "Adds Max-Payne style movement and time mechanics to Minecraft.",
+  "authors": [],
+  "contact": {},
+
+  "license": "Apache-2.0",
+  "icon": "assets/craft-payne/icon.png",
+
+  "environment": "*",
+  "entrypoints": {},
+
+      "mixins": [
+        "craft-payne.mixins.json"
+      ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
