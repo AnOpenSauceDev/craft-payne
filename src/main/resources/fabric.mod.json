@@ -2,24 +2,27 @@
   "schemaVersion": 1,
   "id": "craft-payne",
   "version": "${version}",
-
   "name": "Craft-Payne",
   "description": "Adds Max-Payne style movement and time mechanics to Minecraft.",
-  "authors": [],
-  "contact": {},
-
+  "authors": ["AnOpenSauceDev"],
+  "contact": {
+    "repo": "https://github.com/AnOpenSauceDev/craft-payne"
+  },
   "license": "Apache-2.0",
-  "icon": "assets/craft-payne/icon.png",
-
   "environment": "*",
-  "entrypoints": {},
-
-      "mixins": [
-        "craft-payne.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "com.github.anopensaucedev.craftpayne.client.Craft_PayneClient"
+    ],
+    "main": [
+      "com.github.anopensaucedev.craftpayne.Craft_Payne"
+    ]
+  },
+  "mixins": [
+    "craft-payne.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=${minecraft_version}"
   }
 }
